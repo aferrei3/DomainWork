@@ -1,14 +1,22 @@
 import os
 
+os.system('sudo apt-get update')
 os.system('sudo apt install whois')
 os.system('sudo apt install curl')
-os.system('curl -sSL https://bootstrap.pypa.io/get-pip.py -o get-pip.py')
-os.system('python3 get-pip.py')
-os.system('export PATH="$HOME/.local/bin:$PATH"')
-os.system('rm get-pip.py')
+
+os.system('sudo apt-get install software-properties-common')
+os.system('sudo apt-add-repository universe')
+os.system('sudo apt-get update')
+os.system('sudo apt-get install python3-pip')
+
 os.system('pip install virtualenv')
+
 os.system('git config --global user.email "aferrei3@binghamton.edu"')
 os.system('git config --global user.name "aferrei3')
+
+os.system('virtualenv googenv')
+os.system('googenv/Scripts/activate')
+os.system('googenv/Scripts/pip install google-cloud-domains')
 
 
 os.system('sudo apt-get install apt-transport-https ca-certificates gnupg')
