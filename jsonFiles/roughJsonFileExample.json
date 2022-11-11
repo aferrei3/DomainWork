@@ -1,0 +1,17 @@
+//gonna use this as a rough example of what I want the json file to look like
+//going to generate uniq id in system by email
+[
+	"user1":
+	{
+		"name": "Andrew Ferreira",
+		"email_address" : "example@email.com",
+		"budgetUSD" : 500,
+		"domainName" : "phoenixoutreach.com",
+		"PrefixSuffixFile": "suffpref.txt",
+		"hireVA" : true,
+		"warmupSequence":true,
+		"needsLeads" : true
+	}
+]
+
+
