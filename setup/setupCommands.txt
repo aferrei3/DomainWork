@@ -43,6 +43,11 @@ pip install google_auth_oauthlib
 #installing requests
 pip install requests
 
+#download Postman
+curl https://dl.pstmn.io/download/latest/linux64 -o postman-linux-x64.tar.gz
+gzip -d postman-linux-x64.tar.gz
+tar -xvf postman-linux-x64.tar
+rm postman-linux-x64.tar
 
 #clean
 
