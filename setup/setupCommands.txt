@@ -32,6 +32,7 @@ gcloud init
 sudo apt install npm
 npm init -y
 npm i body-parser mongoose express
+sudo npm install -g live-server
 
 #install robo 3t
 curl https://download.studio3t.com/studio-3t/linux/2022.9.1/studio-3t-linux-x64.tar.gz -o studio-3t-linux-x64.tar.gz
@@ -39,6 +40,7 @@ gzip -d studio-3t-linux-x64.tar.gz
 tar -xvf studio-3t-linux-x64.tar
 chmod +x tar studio-3t-linux-x64.sh
 bash studio-3t-linux-x64.sh
+
 
 
 #clean
