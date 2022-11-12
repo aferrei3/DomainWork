@@ -1,3 +1,4 @@
+
 #base installs
 sudo apt-get update
 sudo apt install whois
@@ -38,5 +39,8 @@ gzip -d studio-3t-linux-x64.tar.gz
 tar -xvf studio-3t-linux-x64.tar
 chmod +x tar studio-3t-linux-x64.sh
 bash studio-3t-linux-x64.sh
+
+
+#clean
 
 

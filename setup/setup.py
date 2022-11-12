@@ -1,6 +1,6 @@
 import os
 
-i_file = open('setupCommands.txt', 'r')
+i_file = open('setup/setupCommands.txt', 'r')
 
 lines = i_file.readlines()
 
