@@ -14,11 +14,6 @@ sudo apt-get install python3-pip
 git config --global user.email "aferrei3@binghamton.edu"
 git config --global user.name "aferrei3"
 
-#virtualenv install
-pip install virtualenv
-virtualenv googenv
-googenv/Scripts/activate
-googenv/Scripts/pip install google-cloud-domains
 
 #google cloud install & init
 sudo apt-get install apt-transport-https ca-certificates gnupg
@@ -28,19 +23,22 @@ sudo apt-get update && sudo apt-get install google-cloud-cli
 gcloud init
 
 
-#npm initialization and install
+#install npm probably gonna need it
 sudo apt install npm
-npm init -y
-npm i body-parser mongoose express
-sudo npm install -g live-server
 
-#install robo 3t
-curl https://download.studio3t.com/studio-3t/linux/2022.9.1/studio-3t-linux-x64.tar.gz -o studio-3t-linux-x64.tar.gz
-gzip -d studio-3t-linux-x64.tar.gz
-tar -xvf studio-3t-linux-x64.tar
-chmod +x tar studio-3t-linux-x64.sh
-bash studio-3t-linux-x64.sh
 
+#virtualenv install
+
+pip install virtualenv
+virtualenv googenv
+googenv/Scripts/activate
+googenv/Scripts/pip install google-cloud-domains
+
+#installing google-api-python-client
+pip install --upgrade google-api-python-client
+
+#installing OAUTH client
+pip install oauth2client
 
 
 #clean
