@@ -1,0 +1,142 @@
+gcloud init --verbosity=debug
+DEBUG: Running [gcloud.init] with arguments: [--verbosity: "debug"]
+Welcome! This command will take you through the configuration of gcloud.
+
+Settings from your current configuration [default] are:
+core:
+  account: andrewf289@gmail.com
+  disable_usage_reporting: 'True'
+  project: gothic-context-367901
+  verbosity: debug
+
+Pick configuration to use:
+ [1] Re-initialize this configuration [default] with new settings 
+ [2] Create a new configuration
+Please enter your numeric choice:  1
+
+Your current configuration has been set to: [default]
+
+You can skip diagnostics next time by using the following flag:
+  gcloud init --skip-diagnostics
+
+Network diagnostic detects and fixes local network connection issues.
+Checking network connection...⠶DEBUG: Starting new HTTPS connection (1): accounts.google.com:443    
+Checking network connection...⠧DEBUG: https://accounts.google.com:443 "GET / HTTP/1.1" 302 338      
+DEBUG: https://accounts.google.com:443 "GET /ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F HTTP/1.1" 302 524
+Checking network connection...⠏DEBUG: https://accounts.google.com:443 "GET /v3/signin/identifier?dsh=S134833686%3A1668285498158855&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=ARgdvAvA4mP-aly2L0WPVIlRvZ5OL1H18XRx94BUNd1uVPFz1z46-r8WNieRR1RUtYYBARaAAQvK HTTP/1.1" 200 None
+DEBUG: Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+DEBUG: https://cloudresourcemanager.googleapis.com:443 "GET /v1beta1/projects HTTP/1.1" 401 None
+DEBUG: Starting new HTTPS connection (1): www.googleapis.com:443
+Checking network connection...⠛DEBUG: https://www.googleapis.com:443 "GET /auth/cloud-platform HTTP/1.1" 200 14
+DEBUG: Starting new HTTPS connection (1): dl.google.com:443
+Checking network connection...⠹DEBUG: https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 203446
+Checking network connection...done.                                                                 
+Reachability Check passed.
+Network diagnostic passed (1/1 checks passed).
+
+Choose the account you would like to use to perform operations for this configuration:
+ [1] andrewf289@gmail.com
+ [2] Log in with a new account
+Please enter your numeric choice:  1
+
+You are logged in as: [andrewf289@gmail.com].
+
+DEBUG: Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+DEBUG: https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE&pageSize=201 HTTP/1.1" 200 None
+Pick cloud project to use: 
+ [1] gothic-context-367901
+ [2] Enter a project ID
+ [3] Create a new project
+Please enter numeric choice or text value (must exactly match list item):  1
+
+Your current project has been set to: [gothic-context-367901].
+
+DEBUG: Loaded Command Group: ['gcloud', 'compute']
+DEBUG: Loaded Command Group: ['gcloud', 'compute', 'project_info']
+DEBUG: Loaded Command Group: ['gcloud', 'compute', 'project-info', 'describe']
+INFO: Executing: [gcloud compute project-info describe --quiet]
+DEBUG: Running [gcloud.compute.project-info.describe] with arguments: [--no-user-output-enabled: "false", --quiet: "True"]
+DEBUG: Starting new HTTPS connection (1): compute.googleapis.com:443
+DEBUG: https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+DEBUG: (gcloud.compute.project-info.describe) PERMISSION_DENIED: Compute Engine API has not been used in project 734760881779 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=734760881779 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+- '@type': type.googleapis.com/google.rpc.Help
+  links:
+  - description: Google developers console API activation
+    url: https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=734760881779
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadatas:
+    consumer: projects/734760881779
+    service: compute.googleapis.com
+  reason: SERVICE_DISABLED
+Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 807, in Run
+    resources = command_instance.Run(args)
+  File "/usr/lib/google-cloud-sdk/lib/surface/compute/project_info/describe.py", line 37, in Run
+    return client.MakeRequests([(client.apitools_client.projects, 'Get',
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 93, in MakeRequests
+    objects = list(
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/request_helper.py", line 297, in MakeRequests
+    responses, new_errors = batch_helper.MakeRequests(
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/batch_helper.py", line 104, in MakeRequests
+    responses = batch_request.Execute(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/apitools/base/py/batch.py", line 226, in Execute
+    batch_http_request.Execute(http)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/apitools/base/py/batch.py", line 506, in Execute
+    self.__callback(response, exception)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/batch_helper.py", line 72, in BatchCheck
+    apis.PromptToEnableApi(project, service_token, exception,
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 193, in PromptToEnableApi
+    raise exception
+googlecloudsdk.api_lib.util.exceptions.HttpException: PERMISSION_DENIED: Compute Engine API has not been used in project 734760881779 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=734760881779 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+- '@type': type.googleapis.com/google.rpc.Help
+  links:
+  - description: Google developers console API activation
+    url: https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=734760881779
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadatas:
+    consumer: projects/734760881779
+    service: compute.googleapis.com
+  reason: SERVICE_DISABLED
+ERROR: (gcloud.compute.project-info.describe) PERMISSION_DENIED: Compute Engine API has not been used in project 734760881779 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=734760881779 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+- '@type': type.googleapis.com/google.rpc.Help
+  links:
+  - description: Google developers console API activation
+    url: https://console.developers.google.com/apis/api/compute.googleapis.com/overview?project=734760881779
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadatas:
+    consumer: projects/734760881779
+    service: compute.googleapis.com
+  reason: SERVICE_DISABLED
+INFO: [compute project-info describe --quiet] has failed
+
+Not setting default zone/region (this feature makes it easier to use
+[gcloud compute] by setting an appropriate default value for the
+--zone and --region flag).
+See https://cloud.google.com/compute/docs/gcloud-compute section on how to set
+default compute region and zone manually. If you would like [gcloud init] to be
+able to do this for you the next time you run it, make sure the
+Compute Engine API is enabled for your project on the
+https://console.developers.google.com/apis page.
+
+DEBUG: Not configuring default .boto file. File already exists at [/home/ubuntu/.boto].
+Your Google Cloud SDK is configured and ready to use!
+
+* Commands that require authentication will use andrewf289@gmail.com by default
+* Commands will reference project `gothic-context-367901` by default
+Run `gcloud help config` to learn how to change individual settings
+
+This gcloud configuration is called [default]. You can create additional configurations if you work with multiple accounts and/or projects.
+Run `gcloud topic configurations` to learn more.
+
+Some things to try next:
+
+* Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcloud help COMMAND` to get help on any gcloud command.
+* Run `gcloud topic --help` to learn about advanced features of the SDK like arg files and output formatting
+* Run `gcloud cheat-sheet` to see a roster of go-to `gcloud` commands.
+INFO: Display format: "default"
+DEBUG: SDK update checks are disabled.

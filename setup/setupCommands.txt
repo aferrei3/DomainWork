@@ -28,7 +28,6 @@ sudo apt install npm
 
 
 #virtualenv install
-
 pip install virtualenv
 virtualenv googenv
 googenv/Scripts/activate
@@ -39,6 +38,10 @@ pip install --upgrade google-api-python-client
 
 #installing OAUTH client
 pip install oauth2client
+pip install google_auth_oauthlib
+
+#installing requests
+pip install requests
 
 
 #clean

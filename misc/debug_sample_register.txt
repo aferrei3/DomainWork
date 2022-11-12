@@ -1,0 +1,263 @@
+q:gcloud domains registrations register coolguyeatsass.com --verbosity=debug
+DEBUG: Running [gcloud.domains.registrations.register] with arguments: [--verbosity: "debug", REGISTRATION: "coolguyeatsass.com"]
+DEBUG: Starting new HTTPS connection (1): domains.googleapis.com:443
+DEBUG: https://domains.googleapis.com:443 "GET /v1/projects/gothic-context-367901/locations/global/registrations:retrieveRegisterParameters?alt=json&domainName=coolguyeatsass.com HTTP/1.1" 429 None
+DEBUG: Response returned status 429, retrying
+DEBUG: Retrying request to url https://domains.googleapis.com/v1/projects/gothic-context-367901/locations/global/registrations:retrieveRegisterParameters?alt=json&domainName=coolguyeatsass.com after exception HttpError accessing <https://domains.googleapis.com/v1/projects/gothic-context-367901/locations/global/registrations:retrieveRegisterParameters?alt=json&domainName=coolguyeatsass.com>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Sat, 12 Nov 2022 20:01:09 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"', 'transfer-encoding': 'chunked', 'status': 429}>, content <{
+  "error": {
+    "code": 429,
+    "message": "Quota exceeded for quota metric 'API requests excluding read-only calls' and limit 'API requests excluding read-only calls per day' of service 'domains.googleapis.com' for consumer 'project_number:734760881779'.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "RATE_LIMIT_EXCEEDED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "quota_metric": "domains.googleapis.com/api-requests-reads-excluded",
+          "consumer": "projects/734760881779",
+          "service": "domains.googleapis.com",
+          "quota_limit": "NonReadAPIRequestsPerDay",
+          "quota_limit_value": "100",
+          "quota_location": "global"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Request a higher quota limit.",
+            "url": "https://cloud.google.com/docs/quota#requesting_higher_quota"
+          }
+        ]
+      }
+    ]
+  }
+}
+>
+DEBUG: Starting new HTTPS connection (1): domains.googleapis.com:443
+DEBUG: https://domains.googleapis.com:443 "GET /v1/projects/gothic-context-367901/locations/global/registrations:retrieveRegisterParameters?alt=json&domainName=coolguyeatsass.com HTTP/1.1" 429 None
+DEBUG: Response returned status 429, retrying
+DEBUG: Retrying request to url https://domains.googleapis.com/v1/projects/gothic-context-367901/locations/global/registrations:retrieveRegisterParameters?alt=json&domainName=coolguyeatsass.com after exception HttpError accessing <https://domains.googleapis.com/v1/projects/gothic-context-367901/locations/global/registrations:retrieveRegisterParameters?alt=json&domainName=coolguyeatsass.com>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Sat, 12 Nov 2022 20:01:11 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"', 'transfer-encoding': 'chunked', 'status': 429}>, content <{
+  "error": {
+    "code": 429,
+    "message": "Quota exceeded for quota metric 'API requests excluding read-only calls' and limit 'API requests excluding read-only calls per day' of service 'domains.googleapis.com' for consumer 'project_number:734760881779'.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "RATE_LIMIT_EXCEEDED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "quota_location": "global",
+          "consumer": "projects/734760881779",
+          "quota_metric": "domains.googleapis.com/api-requests-reads-excluded",
+          "service": "domains.googleapis.com",
+          "quota_limit_value": "100",
+          "quota_limit": "NonReadAPIRequestsPerDay"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Request a higher quota limit.",
+            "url": "https://cloud.google.com/docs/quota#requesting_higher_quota"
+          }
+        ]
+      }
+    ]
+  }
+}
+>
+DEBUG: Starting new HTTPS connection (1): domains.googleapis.com:443
+DEBUG: https://domains.googleapis.com:443 "GET /v1/projects/gothic-context-367901/locations/global/registrations:retrieveRegisterParameters?alt=json&domainName=coolguyeatsass.com HTTP/1.1" 429 None
+DEBUG: Response returned status 429, retrying
+DEBUG: Retrying request to url https://domains.googleapis.com/v1/projects/gothic-context-367901/locations/global/registrations:retrieveRegisterParameters?alt=json&domainName=coolguyeatsass.com after exception HttpError accessing <https://domains.googleapis.com/v1/projects/gothic-context-367901/locations/global/registrations:retrieveRegisterParameters?alt=json&domainName=coolguyeatsass.com>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Sat, 12 Nov 2022 20:01:15 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"', 'transfer-encoding': 'chunked', 'status': 429}>, content <{
+  "error": {
+    "code": 429,
+    "message": "Quota exceeded for quota metric 'API requests excluding read-only calls' and limit 'API requests excluding read-only calls per day' of service 'domains.googleapis.com' for consumer 'project_number:734760881779'.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "RATE_LIMIT_EXCEEDED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "consumer": "projects/734760881779",
+          "quota_metric": "domains.googleapis.com/api-requests-reads-excluded",
+          "quota_limit_value": "100",
+          "quota_location": "global",
+          "quota_limit": "NonReadAPIRequestsPerDay",
+          "service": "domains.googleapis.com"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Request a higher quota limit.",
+            "url": "https://cloud.google.com/docs/quota#requesting_higher_quota"
+          }
+        ]
+      }
+    ]
+  }
+}
+>
+DEBUG: Starting new HTTPS connection (1): domains.googleapis.com:443
+DEBUG: https://domains.googleapis.com:443 "GET /v1/projects/gothic-context-367901/locations/global/registrations:retrieveRegisterParameters?alt=json&domainName=coolguyeatsass.com HTTP/1.1" 429 None
+DEBUG: Response returned status 429, retrying
+DEBUG: Retrying request to url https://domains.googleapis.com/v1/projects/gothic-context-367901/locations/global/registrations:retrieveRegisterParameters?alt=json&domainName=coolguyeatsass.com after exception HttpError accessing <https://domains.googleapis.com/v1/projects/gothic-context-367901/locations/global/registrations:retrieveRegisterParameters?alt=json&domainName=coolguyeatsass.com>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Sat, 12 Nov 2022 20:01:23 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"', 'transfer-encoding': 'chunked', 'status': 429}>, content <{
+  "error": {
+    "code": 429,
+    "message": "Quota exceeded for quota metric 'API requests excluding read-only calls' and limit 'API requests excluding read-only calls per day' of service 'domains.googleapis.com' for consumer 'project_number:734760881779'.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "RATE_LIMIT_EXCEEDED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "consumer": "projects/734760881779",
+          "service": "domains.googleapis.com",
+          "quota_metric": "domains.googleapis.com/api-requests-reads-excluded",
+          "quota_limit": "NonReadAPIRequestsPerDay",
+          "quota_limit_value": "100",
+          "quota_location": "global"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Request a higher quota limit.",
+            "url": "https://cloud.google.com/docs/quota#requesting_higher_quota"
+          }
+        ]
+      }
+    ]
+  }
+}
+>
+DEBUG: Starting new HTTPS connection (1): domains.googleapis.com:443
+DEBUG: https://domains.googleapis.com:443 "GET /v1/projects/gothic-context-367901/locations/global/registrations:retrieveRegisterParameters?alt=json&domainName=coolguyeatsass.com HTTP/1.1" 429 None
+DEBUG: (gcloud.domains.registrations.register) HttpError accessing <https://domains.googleapis.com/v1/projects/gothic-context-367901/locations/global/registrations:retrieveRegisterParameters?alt=json&domainName=coolguyeatsass.com>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Sat, 12 Nov 2022 20:01:39 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"', 'transfer-encoding': 'chunked', 'status': 429}>, content <{
+  "error": {
+    "code": 429,
+    "message": "Quota exceeded for quota metric 'API requests excluding read-only calls' and limit 'API requests excluding read-only calls per day' of service 'domains.googleapis.com' for consumer 'project_number:734760881779'.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "RATE_LIMIT_EXCEEDED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "quota_location": "global",
+          "service": "domains.googleapis.com",
+          "quota_metric": "domains.googleapis.com/api-requests-reads-excluded",
+          "quota_limit": "NonReadAPIRequestsPerDay",
+          "consumer": "projects/734760881779",
+          "quota_limit_value": "100"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Request a higher quota limit.",
+            "url": "https://cloud.google.com/docs/quota#requesting_higher_quota"
+          }
+        ]
+      }
+    ]
+  }
+}
+>
+This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.
+Traceback (most recent call last):
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 807, in Run
+    resources = command_instance.Run(args)
+  File "/usr/lib/google-cloud-sdk/lib/surface/domains/registrations/register.py", line 109, in Run
+    register_params = client.RetrieveRegisterParameters(
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/domains/registrations.py", line 434, in RetrieveRegisterParameters
+    return self._service.RetrieveRegisterParameters(request).registerParameters
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/domains/v1/domains_v1_client.py", line 509, in RetrieveRegisterParameters
+    return self._RunMethod(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 734, in _RunMethod
+    http_response = http_wrapper.MakeRequest(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 348, in MakeRequest
+    return _MakeRequestNoRetry(
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 406, in _MakeRequestNoRetry
+    check_response_func(response)
+  File "/usr/lib/google-cloud-sdk/lib/googlecloudsdk/api_lib/util/apis.py", line 213, in _CheckResponseForApiEnablement
+    http_wrapper.CheckResponse(response)
+  File "/usr/bin/../lib/google-cloud-sdk/lib/third_party/apitools/base/py/http_wrapper.py", line 223, in CheckResponse
+    raise exceptions.BadStatusCodeError.FromResponse(response)
+apitools.base.py.exceptions.BadStatusCodeError: HttpError accessing <https://domains.googleapis.com/v1/projects/gothic-context-367901/locations/global/registrations:retrieveRegisterParameters?alt=json&domainName=coolguyeatsass.com>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Sat, 12 Nov 2022 20:01:39 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"', 'transfer-encoding': 'chunked', 'status': 429}>, content <{
+  "error": {
+    "code": 429,
+    "message": "Quota exceeded for quota metric 'API requests excluding read-only calls' and limit 'API requests excluding read-only calls per day' of service 'domains.googleapis.com' for consumer 'project_number:734760881779'.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "RATE_LIMIT_EXCEEDED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "quota_location": "global",
+          "service": "domains.googleapis.com",
+          "quota_metric": "domains.googleapis.com/api-requests-reads-excluded",
+          "quota_limit": "NonReadAPIRequestsPerDay",
+          "consumer": "projects/734760881779",
+          "quota_limit_value": "100"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Request a higher quota limit.",
+            "url": "https://cloud.google.com/docs/quota#requesting_higher_quota"
+          }
+        ]
+      }
+    ]
+  }
+}
+>
+ERROR: (gcloud.domains.registrations.register) HttpError accessing <https://domains.googleapis.com/v1/projects/gothic-context-367901/locations/global/registrations:retrieveRegisterParameters?alt=json&domainName=coolguyeatsass.com>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Sat, 12 Nov 2022 20:01:39 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000,h3-Q050=":443"; ma=2592000,h3-Q046=":443"; ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"', 'transfer-encoding': 'chunked', 'status': 429}>, content <{
+  "error": {
+    "code": 429,
+    "message": "Quota exceeded for quota metric 'API requests excluding read-only calls' and limit 'API requests excluding read-only calls per day' of service 'domains.googleapis.com' for consumer 'project_number:734760881779'.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "RATE_LIMIT_EXCEEDED",
+        "domain": "googleapis.com",
+        "metadata": {
+          "quota_location": "global",
+          "service": "domains.googleapis.com",
+          "quota_metric": "domains.googleapis.com/api-requests-reads-excluded",
+          "quota_limit": "NonReadAPIRequestsPerDay",
+          "consumer": "projects/734760881779",
+          "quota_limit_value": "100"
+        }
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Request a higher quota limit.",
+            "url": "https://cloud.google.com/docs/quota#requesting_higher_quota"
+          }
+        ]
+      }
+    ]
+  }
+}
+>
+This may be due to network connectivity issues. Please check your network settings, and the status of the service you are trying to reach.
