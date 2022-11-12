@@ -33,5 +33,10 @@ npm init -y
 npm i body-parser mongoose express
 
 #install robo 3t
-sudo snap install robo3t-snap
+curl https://download.studio3t.com/studio-3t/linux/2022.9.1/studio-3t-linux-x64.tar.gz -o studio-3t-linux-x64.tar.gz
+gzip -d studio-3t-linux-x64.tar.gz
+tar -xvf studio-3t-linux-x64.tar
+chmod +x tar studio-3t-linux-x64.sh
+bash studio-3t-linux-x64.sh
+
 
