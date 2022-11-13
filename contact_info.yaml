@@ -1,0 +1,10 @@
+allContacts:
+              email: 'andrewf289@gmail.com'
+              phoneNumber: '+1.5163821472'
+              postalAddress:
+                regionCode: 'US'
+                postalCode: '13902'
+                administrativeArea: 'NY'
+                locality: 'Binghamton'
+                addressLines: ['53 Russell Road']
+                recipients: ['Andrew Ferreira']

@@ -1,0 +1,16 @@
+gcloud domains registrations export randomaindhi.com --verbosity=debug
+DEBUG: Running [gcloud.domains.registrations.export] with arguments: [--verbosity: "debug", REGISTRATION: "randomaindhi.com"]
+You are about to export registration 'randomaindhi.com'
+
+Do you want to continue (Y/n)?  y
+
+DEBUG: Starting new HTTPS connection (1): domains.googleapis.com:443
+DEBUG: https://domains.googleapis.com:443 "POST /v1/projects/gothic-context-367901/locations/global/registrations/randomaindhi.com:export?alt=json HTTP/1.1" 200 None
+Waiting for 'operation-1668349325848-5ed5ad8edb031-64506ec2-a02ac57b' to complete...⠧DEBUG: Starting new HTTPS connection (1): domains.googleapis.com:443
+Waiting for 'operation-1668349325848-5ed5ad8edb031-64506ec2-a02ac57b' to complete...⠏DEBUG: https://domains.googleapis.com:443 "GET /v1/projects/gothic-context-367901/locations/global/operations/operation-1668349325848-5ed5ad8edb031-64506ec2-a02ac57b?alt=json HTTP/1.1" 200 None
+Waiting for 'operation-1668349325848-5ed5ad8edb031-64506ec2-a02ac57b' to complete...done.               
+Exported registration [randomaindhi.com] Note:
+Registration remains valid until expiry. Manage it in Google Domains at https://domains.google.com/registrar, or see https://support.google.com/domains/answer/3251174 for more information.
+INFO: Display format: "none"
+DEBUG: SDK update checks are disabled.
+
