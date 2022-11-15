@@ -49,6 +49,26 @@ gzip -d postman-linux-x64.tar.gz
 tar -xvf postman-linux-x64.tar
 rm postman-linux-x64.tar
 
+#install java
+sudo apt install default-jre
+sudo mkdir /usr/local/java
+sudo mv jre-8u291-linux-x64.tar.gz /usr/local/java
+cd /usr/local/java
+sudo tar zxvf jre-8u291-linux-x64.tar.gz
+sudo rm jre-8u291-linux-x64.tar.gz
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/jre1.8.0_291/bin/java" 1
+
+
+
+
+
+
+
+
+#for me
+sudo apt install vim
+snap install spotify
+
 #clean
 
 
